@@ -1,0 +1,348 @@
+// ================================ //
+// ===== _FONTS =================== //
+// ================================ //
+
+// ========================== //
+// ===== _FONT-AWESOME_ ===== //
+// ========================== //
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/font-awesome/fontawesome-webfont.eot?v=4.5.0');
+  src: url('../fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/font-awesome/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/font-awesome/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/font-awesome/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/font-awesome/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// ===================== //
+// ===== _BRANDON_ ===== //
+// ===================== //
+
+@font-face {
+	font-family: 'Brandon_bld';
+	src: url('../fonts/brandon-grotesque/Brandon_bld.eot');
+	src: local('☺'), url('../fonts/brandon-grotesque/Brandon_bld.woff') format('woff'), url('../fonts/brandon-grotesque/Brandon_bld.ttf') format('truetype'), url('../fonts/brandon-grotesque/Brandon_bld.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Brandon_bld_it';
+	src: url('../fonts/brandon-grotesque/Brandon_bld_it.eot');
+	src: local('☺'), url('../fonts/brandon-grotesque/Brandon_bld_it.woff') format('woff'), url('../fonts/brandon-grotesque/Brandon_bld_it.ttf') format('truetype'), url('../fonts/brandon-grotesque/Brandon_bld_it.svg') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Brandon_blk';
+	src: url('../fonts/brandon-grotesque/Brandon_blk.eot');
+	src: local('☺'), url('../fonts/brandon-grotesque/Brandon_blk.woff') format('woff'), url('../fonts/brandon-grotesque/Brandon_blk.ttf') format('truetype'), url('../fonts/brandon-grotesque/Brandon_blk.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Brandon_blk_it';
+	src: url('../fonts/brandon-grotesque/Brandon_blk_it.eot');
+	src: local('☺'), url('../fonts/brandon-grotesque/Brandon_blk_it.woff') format('woff'), url('../fonts/brandon-grotesque/Brandon_blk_it.ttf') format('truetype'), url('../fonts/brandon-grotesque/Brandon_blk_it.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Brandon_light';
+	src: url('../fonts/brandon-grotesque/Brandon_light.eot');
+	src: local('☺'), url('../fonts/brandon-grotesque/Brandon_light.woff') format('woff'), url('../fonts/brandon-grotesque/Brandon_light.ttf') format('truetype'), url('../fonts/brandon-grotesque/Brandon_light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Brandon_light_it';
+	src: url('../fonts/brandon-grotesque/Brandon_light_it.eot');
+	src: local('☺'), url('../fonts/brandon-grotesque/Brandon_light_it.woff') format('woff'), url('../fonts/brandon-grotesque/Brandon_light_it.ttf') format('truetype'), url('../fonts/brandon-grotesque/Brandon_light_it.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Brandon_med';
+	src: url('../fonts/brandon-grotesque/Brandon_med.eot');
+	src: local('☺'), url('../fonts/brandon-grotesque/Brandon_med.woff') format('woff'), url('../fonts/brandon-grotesque/Brandon_med.ttf') format('truetype'), url('../fonts/brandon-grotesque/Brandon_med.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Brandon_reg';
+	src: url('../fonts/brandon-grotesque/Brandon_reg.eot');
+	src: local('☺'), url('../fonts/brandon-grotesque/Brandon_reg.woff') format('woff'), url('../fonts/brandon-grotesque/Brandon_reg.ttf') format('truetype'), url('../fonts/brandon-grotesque/Brandon_reg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Brandon_reg_it';
+	src: url('../fonts/brandon-grotesque/Brandon_reg_it.eot');
+	src: local('☺'), url('../fonts/brandon-grotesque/Brandon_reg_it.woff') format('woff'), url('../fonts/brandon-grotesque/Brandon_reg_it.ttf') format('truetype'), url('../fonts/brandon-grotesque/Brandon_reg_it.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Brandon_thin';
+	src: url('../fonts/brandon-grotesque/Brandon_thin.eot');
+	src: local('☺'), url('../fonts/brandon-grotesque/Brandon_thin.woff') format('woff'), url('../fonts/brandon-grotesque/Brandon_thin.ttf') format('truetype'), url('../fonts/brandon-grotesque/Brandon_thin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Brandon_thin_it';
+	src: url('../fonts/brandon-grotesque/Brandon_thin_it.eot');
+	src: local('☺'), url('../fonts/brandon-grotesque/Brandon_thin_it.woff') format('woff'), url('../fonts/brandon-grotesque/Brandon_thin_it.ttf') format('truetype'), url('../fonts/brandon-grotesque/Brandon_thin_it.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+// ======================= //
+// ===== _OPEN-SANS_ ===== //
+// ======================= //
+
+@font-face {
+  font-family: 'Open Sans 300';
+  src: url("../fonts/open-sans/OpenSans-Light.eot");
+  src: url("../fonts/open-sans/OpenSans-Light.eot") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-Light.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Light.woff") format("woff"), url("../fonts/open-sans/OpenSans-Light.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Open Sans 300 Italic';
+  src: url("../fonts/open-sans/OpenSans-LightItalic.eot");
+  src: url("../fonts/open-sans/OpenSans-LightItalic.eot") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-LightItalic.woff") format("woff"), url("../fonts/open-sans/OpenSans-LightItalic.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-LightItalic.svg") format("svg");
+  font-weight: 300;
+  font-style: italic; 
+}
+
+@font-face {
+  font-family: 'Open Sans Normal';
+  src: url("../fonts/open-sans/OpenSans-Regular.eot");
+  src: url("../fonts/open-sans/OpenSans-Regular.eot") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Regular.woff") format("woff"), url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Open Sans Normal Italic';
+  src: url("../fonts/open-sans/OpenSans-Italic.eot");
+  src: url("../fonts/open-sans/OpenSans-Italic.eot") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-Italic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Italic.woff") format("woff"), url("../fonts/open-sans/OpenSans-Italic.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic; 
+}
+
+@font-face {
+  font-family: 'Open Sans 600';
+  src: url("../fonts/open-sans/OpenSans-Semibold.eot");
+  src: url("../fonts/open-sans/OpenSans-Semibold.eot") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Semibold.woff") format("woff"), url("../fonts/open-sans/OpenSans-Semibold.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-Semibold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Open Sans 600 Italic';
+  src: url("../fonts/open-sans/OpenSans-SemiboldItalic.eot");
+  src: url("../fonts/open-sans/OpenSans-SemiboldItalic.eot") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-SemiboldItalic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-SemiboldItalic.woff") format("woff"), url("../fonts/open-sans/OpenSans-SemiboldItalic.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-SemiboldItalic.svg") format("svg");
+  font-weight: 600;
+  font-style: italic; 
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/open-sans/OpenSans-Bold.eot");
+  src: url("../fonts/open-sans/OpenSans-Bold.eot") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-Bold.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Bold.woff") format("woff"), url("../fonts/open-sans/OpenSans-Bold.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Open Sans Bold Italic';
+  src: url("../fonts/open-sans/OpenSans-BoldItalic.eot");
+  src: url("../fonts/open-sans/OpenSans-BoldItalic.eot") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-BoldItalic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-BoldItalic.woff") format("woff"), url("../fonts/open-sans/OpenSans-BoldItalic.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-BoldItalic.svg") format("svg");
+  font-weight: bold;
+  font-style: italic; 
+}
+
+@font-face {
+  font-family: 'Open Sans 800';
+  src: url("../fonts/open-sans/OpenSans-ExtraBold.eot");
+  src: url("../fonts/open-sans/OpenSans-ExtraBold.eot") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/open-sans/OpenSans-ExtraBold.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-ExtraBold.svg") format("svg");
+  font-weight: 800;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Open Sans 800 Italic';
+  src: url("../fonts/open-sans/OpenSans-ExtraBoldItalic.eot");
+  src: url("../fonts/open-sans/OpenSans-ExtraBoldItalic.eot") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-ExtraBoldItalic.woff") format("woff"), url("../fonts/open-sans/OpenSans-ExtraBoldItalic.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-ExtraBoldItalic.svg") format("svg");
+  font-weight: 800;
+  font-style: italic; 
+}
+
+// =================== //
+// ===== _ABRIL_ ===== //
+// =================== //
+
+@font-face {
+	font-family: 'Abril_Text_SemiBold';
+	src: url('../fonts/abril/Abril_Text_SemiBold.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Text_SemiBold.woff') format('woff'), url('../fonts/abril/Abril_Text_SemiBold.ttf') format('truetype'), url('../fonts/abril/Abril_Text_SemiBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Abril_Text_Regular';
+	src: url('../fonts/abril/Abril_Text_Regular.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Text_Regular.woff') format('woff'), url('../fonts/abril/Abril_Text_Regular.ttf') format('truetype'), url('../fonts/abril/Abril_Text_Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Abril_Text_Italic';
+	src: url('../fonts/abril/Abril_Text_Italic.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Text_Italic.woff') format('woff'), url('../fonts/abril/Abril_Text_Italic.ttf') format('truetype'), url('../fonts/abril/Abril_Text_Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Abril_Text_ExtraBoldItalic';
+	src: url('../fonts/abril/Abril_Text_ExtraBoldItalic.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Text_ExtraBoldItalic.woff') format('woff'), url('../fonts/abril/Abril_Text_ExtraBoldItalic.ttf') format('truetype'), url('../fonts/abril/Abril_Text_ExtraBoldItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Abril_Text_ExtraBold';
+	src: url('../fonts/abril/Abril_Text_ExtraBold.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Text_ExtraBold.woff') format('woff'), url('../fonts/abril/Abril_Text_ExtraBold.ttf') format('truetype'), url('../fonts/abril/Abril_Text_ExtraBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Abril_Text_BoldItalic';
+	src: url('../fonts/abril/Abril_Text_BoldItalic.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Text_BoldItalic.woff') format('woff'), url('../fonts/abril/Abril_Text_BoldItalic.ttf') format('truetype'), url('../fonts/abril/Abril_Text_BoldItalic.svg') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Abril_Text_Bold';
+	src: url('../fonts/abril/Abril_Text_Bold.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Text_Bold.woff') format('woff'), url('../fonts/abril/Abril_Text_Bold.ttf') format('truetype'), url('../fonts/abril/Abril_Text_Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Abril_Fatface_Italic';
+	src: url('../fonts/abril/Abril_Fatface_Italic.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Fatface_Italic.woff') format('woff'), url('../fonts/abril/Abril_Fatface_Italic.ttf') format('truetype'), url('../fonts/abril/Abril_Fatface_Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Abril_Fatface';
+	src: url('../fonts/abril/Abril_Fatface.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Fatface.woff') format('woff'), url('../fonts/abril/Abril_Fatface.ttf') format('truetype'), url('../fonts/abril/Abril_Fatface.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Abril_Display_SemiBoldItalic';
+	src: url('../fonts/abril/Abril_Display_SemiBoldItalic.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Display_SemiBoldItalic.woff') format('woff'), url('../fonts/abril/Abril_Display_SemiBoldItalic.ttf') format('truetype'), url('../fonts/abril/Abril_Display_SemiBoldItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Abril_Display_SemiBold';
+	src: url('../fonts/abril/Abril_Display_SemiBold.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Display_SemiBold.woff') format('woff'), url('../fonts/abril/Abril_Display_SemiBold.ttf') format('truetype'), url('../fonts/abril/Abril_Display_SemiBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Abril_Display_Regular';
+	src: url('../fonts/abril/Abril_Display_Regular.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Display_Regular.woff') format('woff'), url('../fonts/abril/Abril_Display_Regular.ttf') format('truetype'), url('../fonts/abril/Abril_Display_Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Abril_Display_Italic';
+	src: url('../fonts/abril/Abril_Display_Italic.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Display_Italic.woff') format('woff'), url('../fonts/abril/Abril_Display_Italic.ttf') format('truetype'), url('../fonts/abril/Abril_Display_Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Abril_Display_ExtraBoldItalic';
+	src: url('../fonts/abril/Abril_Display_ExtraBoldItalic.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Display_ExtraBoldItalic.woff') format('woff'), url('../fonts/abril/Abril_Display_ExtraBoldItalic.ttf') format('truetype'), url('../fonts/abril/Abril_Display_ExtraBoldItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Abril_Display_ExtraBold';
+	src: url('../fonts/abril/Abril_Display_ExtraBold.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Display_ExtraBold.woff') format('woff'), url('../fonts/abril/Abril_Display_ExtraBold.ttf') format('truetype'), url('../fonts/abril/Abril_Display_ExtraBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Abril_Display_BoldItalic';
+	src: url('../fonts/abril/Abril_Display_BoldItalic.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Display_BoldItalic.woff') format('woff'), url('../fonts/abril/Abril_Display_BoldItalic.ttf') format('truetype'), url('../fonts/abril/Abril_Display_BoldItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Abril_Display_Bold';
+	src: url('../fonts/abril/Abril_Display_Bold.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Display_Bold.woff') format('woff'), url('../fonts/abril/Abril_Display_Bold.ttf') format('truetype'), url('../fonts/abril/Abril_Display_Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Abril_Display_Black';
+	src: url('../fonts/abril/Abril_Display_Black.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Display_Black.woff') format('woff'), url('../fonts/abril/Abril_Display_Black.ttf') format('truetype'), url('../fonts/abril/Abril_Display_Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Abril_Text_SemiBoldItalic';
+	src: url('../fonts/abril/Abril_Text_SemiBoldItalic.eot');
+	src: local('☺'), url('../fonts/abril/Abril_Text_SemiBoldItalic.woff') format('woff'), url('../fonts/abril/Abril_Text_SemiBoldItalic.ttf') format('truetype'), url('../fonts/abril/Abril_Text_SemiBoldItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
