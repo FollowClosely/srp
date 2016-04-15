@@ -1,3 +1,5 @@
+### todo:
+
 1. ADD SERVICE (nav.js)
 2. OLD.CSS (remove, take any styles you want to transfer)
 3. MAKE NAVBAR A SERVICE!
