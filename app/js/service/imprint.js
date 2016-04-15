@@ -2,7 +2,7 @@
 
 module.exports = function() {
 
-  var text = "some text here" + "text here";
+  var text = 'some text here' + 'text here';
 
   this.getText = function() {
     return text;

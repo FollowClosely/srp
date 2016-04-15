@@ -1,0 +1,39 @@
+<!--
+** something is wrong with the quote object
+** think you need to maket it a 'quotes' object and next all 3 inside
+-->
+
+<div>{{pokemon}}</div>
+
+<section class="{{ page }}" ng-repeat="quote in quotes">
+
+	<div class="slide quote-{{ id }}" data-bg="home-background-quote-{{ shortName }}">
+		<a href="#" class="slide-close" rel="nofollow"></a>
+		<div class="inside">
+			<div class="quote">
+				<p>{{ content }}</p>
+				<p class="name">{{ attr }}</p>
+				<a href="#" class="play" rel="nofollow"></a>
+			</div>
+		</div>
+		<iframe data-src="" class="quote-video" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>
+</section>
+
+</div>
+<!-- 
+** sketch w/ jade-like syntax
+
+div.slide.quote-{{ quote.number }} data-bg=home-bg-quote-{{ quote.Id }} 
+	a.slide-close
+	div.inside
+		div.quote
+			p
+				{{ quote.content }}
+
+			p.name
+				{{ quote.attr }}
+			a.play
+	iframe.quote-video data-src={{ vimeoUrl }}&amp;player_id={{ quoteId }}
+
+-->

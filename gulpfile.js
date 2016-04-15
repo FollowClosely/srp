@@ -1,15 +1,20 @@
 'use strict';
 
 var browserify = require('browserify'),
-  del = require('del'),
-  source = require('vinyl-source-stream'),
-  vinylPaths = require('vinyl-paths'),
-  buffer = require('vinyl-buffer'),
-  glob = require('glob'),
-  Server = require('karma').Server,
-  merge = require('merge'),
-  watchify = require('watchify'),
-  gulp = require('gulp');
+    del         = require('del'),
+    source      = require('vinyl-source-stream'),
+    vinylPaths  = require('vinyl-paths'),
+    glob        = require('glob'),
+    Server      = require('karma').Server,
+    liveReload  = require('gulp-livereload'),
+    gulp        = require('gulp'),
+    sass        = require('gulp-sass'),
+    sourceMaps  = require('gulp-sourcemaps'),
+    rename      = require('gulp-rename'),
+    notify      = require('gulp-notify'),
+    buffer      = require('vinyl-buffer'),
+    merge = require('merge'),
+    watchify = require('watchify');
 
 // Load all gulp plugins listed in package.json
 var gulpPlugins = require('gulp-load-plugins')({
@@ -17,66 +22,36 @@ var gulpPlugins = require('gulp-load-plugins')({
   replaceString: /\bgulp[\-.]/
 });
 
-// THESE GULP-MODULES DIDN’T WORK
-var sourcemaps = require('gulp-sourcemaps'),
-    sass       = require('gulp-sass'),
-    rename     = require('gulp-rename'),
-    gutil      = require('gulp-util');
-
-
-
-
-
 // Define file path variables
 var paths = {
-  root: 'app/',      // App root path
-  src:  'app/js/',   // Source path
-  dist: 'app/dist/', // Distribution path
-  test: 'test/',     // Test path
+  root: './app/',
+  src:  './app/js/',
+  dist: './app/dist/',
+  test: './test/'
 };
 
-var rootDir  = './',
-  cssDest  = './app/css/',
+var config = {
+  js: {
+    src: './app/js/app.js',
+    outputDir: './app/dist/',
+    mapDir: './maps/',
+    outputFile: './bundle.js'
+  }
+};
+
+var cssDest  = './app/css/',
   sassSrc  = './app/css/app.scss',
   sassGlob = './app/css/**/*.scss';
-  
-//  jsDest   = './app/js/',
-//  jsSrc    = './app/js/main.js',
-//  jsGlob   = './app/js/**/*.js';
 
-/*
- * Useful tasks:
- * - gulp fast:
- *   - linting
- *   - unit tests
- *   - browserification
- *   - no minification, does not start server.
- * - gulp watch:
- *   - starts server with live reload enabled
- *   - lints, unit tests, browserifies and live-reloads changes in browser
- *   - no minification
- * - gulp:
- *   - linting
- *   - unit tests
- *   - browserification
- *   - minification and browserification of minified sources
- *   - start server for e2e tests
- *   - run Protractor End-to-end tests
- *   - stop server immediately when e2e tests have finished
- *
- * At development time, you should usually just have 'gulp watch' running in the
- * background all the time. Use 'gulp' before releases.
- */
-
-var liveReload = true;
+// var liveReload = true;
 
 gulp.task('compile:css', function(){
   return gulp
     .src(sassSrc)
-    .pipe(sourcemaps.init())
+    .pipe(sourceMaps.init())
     // .pipe(sass().on('error', sass.logError))
     .pipe(sass())
-    .pipe(sourcemaps.write())
+    .pipe(sourceMaps.write())
     .pipe(gulp.dest(cssDest));
 });
 
@@ -152,8 +127,8 @@ gulp.task('karma', ['browserify-tests'], function (done) {
 
 gulp.task('server', ['browserify'], function () {
   gulpPlugins.connect.server({
-    root: 'app',
-    livereload: liveReload,
+    root: 'app'
+    // livereload: liveReload
   });
 });
 
@@ -171,21 +146,62 @@ gulp.task('e2e', ['server'], function () {
   });
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', ['bundle'], /*['fast'],*/ function () {
   gulp.start('server');
   gulp.watch(sassGlob, ['compile:css']);
   gulp.watch([
     paths.src + '**/*.js',
     '!' + paths.src + 'third-party/**',
     paths.test + '**/*.js',
-  ], ['fast']);
+  ]);
 });
 
-gulp.task('fast', ['clean'], function () {
+gulp.task('fast', /* ['clean'], */ function () {
   gulp.start('browserify');
 });
 
-gulp.task('default', ['clean'], function () {
-  liveReload = false;
+gulp.task('testit', ['clean'], function () {
+  // liveReload = false;
   gulp.start('karma', 'browserify', 'browserify-min', 'e2e');
+});
+
+
+
+function bundle (bundler) { 
+  bundler
+    .bundle()
+    .pipe(source(config.js.src))
+    .pipe(buffer())
+    .pipe(rename(config.js.outputFile))
+    .pipe(sourceMaps.init({ loadMaps : true }))
+    .pipe(sourceMaps.write(config.js.mapDir))
+    .pipe(gulp.dest(config.js.outputDir))
+    .pipe(notify({
+      message: 'Generated file: <%= file.relative %>',
+    }))
+    .pipe(liveReload());
+}
+
+// gulp.task('bundle', function () {
+//   var bundler = browserify(config.js.src);
+//   bundle(bundler);
+// });
+
+
+gulp.task('bundle', function(){
+  
+  liveReload(); // Start livereload server
+  var args = merge(watchify.args, { debug: true });
+  var bundler = browserify(config.js.src, args)
+    .plugin(watchify, {ignoreWatch: [
+      '**/node_modules/**',
+      '**/bower_components/**'
+    ]});
+
+  bundle(bundler); // Run the bundle the first time (required for Watchify to kick in)
+
+  bundler.on('update', function() {
+    bundle(bundler); // Re-run bundle on source updates
+  });
+
 });

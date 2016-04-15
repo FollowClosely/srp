@@ -1,19 +1,19 @@
 'use strict';
 
-module.exports = function() {
+module.exports = function(){
 
 	jQuery(document).ready(function($){
 		//move nav element position according to window width
 		moveNavigation();
 		$(window).on('resize', function(){
-			(!window.requestAnimationFrame) ? setTimeout(moveNavigation, 300) : window.requestAnimationFrame(moveNavigation);
+			!window.requestAnimationFrame ? setTimeout(moveNavigation, 300) : window.requestAnimationFrame(moveNavigation);
 		});
 
 		//mobile version - open/close navigation
 		$('.sr-nav-trigger').on('click', function(event){
 			event.preventDefault();
 			if($('header').hasClass('nav-is-visible')) $('.moves-out').removeClass('moves-out');
-			
+
 			$('header').toggleClass('nav-is-visible');
 			$('.sr-main-nav').toggleClass('nav-is-visible');
 			$('.sr-main-content').toggleClass('nav-is-visible');
@@ -51,5 +51,5 @@ module.exports = function() {
 		}
 	});
 
-
 };
+
